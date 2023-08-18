@@ -1,0 +1,88 @@
+.card1{
+    background-image: url(../../assets/images/card2.jpg);
+    width: 38%;
+    height: 356px;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.card2{
+    background-image: url(../../assets/images/card1.jpg);
+    width: 45%;
+    height: 356px;
+    margin-top: 7%;
+    margin-left: 5%;
+    
+}
+.zone1{
+    background-image: url(../../assets/images/zone1.png);
+    width: 200%;
+    height: 390px;
+    
+    
+} 
+.zone2{
+    background-image: url(../../assets/images/zone2.png);
+    width: 200%;
+    height: 390px;
+    
+    
+}
+.zone3{
+    background-image: url(../../assets/images/zone3.png);
+    width: 200%;
+    height: 390px;
+    
+    
+}
+.zones4{
+    background-image: url(../../assets/images/zone4.png);
+    width: 200%;
+    height: 390px;
+    margin-top: 12px;
+    
+}
+.zones5{
+    background-image: url(../../assets/images/zone5.png);
+    width: 200%;
+    height: 390px;
+    margin-top: 12px;
+          
+}
+
+.zones6{
+    background-image: url(../../assets/images/zone6.png);
+    width: 500%;
+    height: 570px;
+    margin-top: 12px;
+          
+}
+
+@media (min-width:425px) and (max-width:768px){
+    .row{
+        flex-direction: column; 
+    
+         }
+         .zone1{
+            width: 82%;
+         }
+         .zone2{
+            width: 82%;
+         }
+         .zone3{
+            width: 82%;
+         }
+         .zones4{
+            width: 82%;
+         }
+         .zones5{ 
+            width: 82%;
+         }
+         .zones6{
+            width: 82%;
+            height: 52%;
+         }
+         .zones7{
+            width: 82%;
+         }
+}
