@@ -32,6 +32,7 @@ import women3 from '../../assets/images/women3.png'
 import women4 from '../../assets/images/women4.png'
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
+
 import  './Shop.css';
 
 import CardGroup from 'react-bootstrap/CardGroup';
