@@ -1,22 +1,21 @@
-import React  from 'react';
+// import React  from 'react';
+import React, { useState } from "react";
+
 import './Women.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-import Card from 'react-bootstrap/Card';
 
 
 import Accordion from 'react-bootstrap/Accordion';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import Table from 'react-bootstrap/Table';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilter} from '@fortawesome/free-solid-svg-icons';
+import {faFilter} from '@fortawesome/free-solid-svg-icons';
 import { faHeart} from '@fortawesome/free-regular-svg-icons';
 
 
@@ -37,214 +36,93 @@ import Rectangle25blueflower from '../../assets/Rectangle25blueflower.png';
 import Rectangle25linepatter from '../../assets/Rectangle25linepatter.png';
 
 
-
-
 function Body() {
 
   return (
 
         <div className="container  " >
          <div className='row  '>
-          <div className='div1 col-2 col-12 col-lg-2 mb-2'>
-          <Navbar.Brand href="#home">Filter</Navbar.Brand>
+          <div className='div1 col-2 col-12 col-lg-2 '>
+          <Navbar.Brand className="filter" href="#home">Filter</Navbar.Brand>
           <FontAwesomeIcon icon={faFilter } className='icon '/>
           
           <hr/>
-
-           
-            
-         
-        
-          <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Trops `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Printed T-shirts `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Plain T-shirts `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Kurti `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Boxers `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Full sleeve T-shirts `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Joggers `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Payjamas `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Jeans `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
+          <Accordion>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+    {/* <div className='accordion'>
+         <span>Tops</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Printed T-shirts</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Plain T-shirts</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Kurti</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Boxers</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Full sleeve T-shirts</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Joggers</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    <div className='accordion'>
+         <span>Payjamas</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+    
+    <div className='accordion'>
+         <span>Jeans</span>
+         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
+    </div>
+     */}
 
     <hr/>
 
-    <Accordion defaultActiveKey="0" flush>
+    <Accordion defaultActiveKey="0" flush
+    >
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Price</Accordion.Header>
+        <Accordion.Header
+        >Price</Accordion.Header>
         <Form.Range />
         <div className='col-12 d-flex ' >
             <Button  variant="white">$77.00</Button>
-      <Button  variant="white">$77.00</Button>
+      <Button className='b2' variant="white">$77.00</Button>
             </div>
         <Accordion.Body>
         </Accordion.Body>
@@ -254,64 +132,64 @@ function Body() {
         <Accordion.Body>
         <div className="container " >
       <div className='cardss col d-flex justify-content-center' >    
-        <div className='cards ' >
-        <Button variant="$purple"></Button>
-        Purple
+        <div className='tcards ' >
+        <Button className='purple'variant=""></Button>
+        <h6 className='tcolor'>Purple</h6>
         </div>
         
-        <div className='cards ' >
-        <Button variant="black"></Button>
-        Black
+        <div className='tcards ' >
+        <Button className="black" variant=""></Button>
+        <h6 className='tcolor'>Black</h6>
         </div>               
-        <div className='cards ' >
-        <Button variant="danger"></Button>
-         Red
+        <div className='tcards ' >
+        <Button className="red" variant=""></Button>
+        <h6 className='tcolor'>Red</h6>
         </div>
-        <div className='cards ' >
-        <Button variant="primary"></Button>
-        Orange
+        <div className='tcards ' >
+        <Button className="orange"variant=""></Button>
+        <h6 className='tcolor'>Orange</h6>
         </div>
         </div>
       </div>
       <div className="container " >
       <div className='cardss col d-flex justify-content-center' >    
-        <div className='cards ' >
-        <Button variant="info"></Button>
-        Navy
+        <div className='tcards ' >
+        <Button className="navy" variant=""></Button>
+        <h6 className='tcolor'>Navy</h6>
         </div>
         
-        <div className='cards ' >
-        <Button variant="primary"></Button>
-        White
+        <div className='tcards ' >
+        <Button  className="white"variant=""></Button>
+        <h6 className='tcolor'>White</h6> 
         </div>               
-        <div className='cards ' >
-        <Button variant="primary"></Button>
-        Broom
+        <div className='tcards ' >
+        <Button className="broom"variant=""></Button>
+        <h6 className='tcolor'>Broom</h6> 
         </div>
-        <div className='cards ' >
-        <Button variant="success"></Button>
-        Green
+        <div className='tcards ' >
+        <Button className="green"variant=""></Button>
+        <h6 className='tcolor'>Green</h6> 
         </div>
         </div>
       </div>
       <div className="container " >
       <div className='cardss col d-flex justify-content-center' >    
-        <div className='cards ' >
-        <Button variant="warning"></Button>
-        Yellow
+        <div className='tcards ' >
+        <Button className="yellow"variant=""></Button>
+        <h6 className='tcolor'>Yellow</h6>
         </div>
         
-        <div className='cards ' >
-        <Button variant="primary"></Button>
-        Grey
+        <div className='tcards ' >
+        <Button className="grey" variant=""></Button>
+        <h6 className='tcolor'>Grey</h6>
         </div>               
-        <div className='cards ' >
-        <Button variant="pink"></Button>
-        Pink
+        <div className='tcards ' >
+        <Button className="pink"variant=""></Button>
+        <h6 className='tcolor'>Pink</h6>
         </div>
-        <div className='cards ' >
-        <Button variant="info"></Button>
-        Blue
+        <div className='tcards ' >
+        <Button className="blue"variant=""></Button>
+        <h6 className='tcolor'>Blue</h6> 
         </div>
         </div>
       </div>
@@ -456,6 +334,9 @@ function Body() {
             </DropdownButton>
           ),
         )}
+
+
+
       </div>
       
         </Accordion.Body>
@@ -489,7 +370,7 @@ function Body() {
            {/* <h5>Black Sweatshirt with ....</h5>
           <span>Jhanvi’s  Brand</span>  */}
                   <div className='text'>
-          <Button variant="white">Black Sweatshirt with ....</Button><br/>
+                <Button  variant="white">Black Sweatshirt with ....</Button><br/>
           <Button variant="white">Jhanvi’s  Brand</Button>
           <Button className='prix' variant="white">$123.00</Button>
           </div>
@@ -661,10 +542,10 @@ function Body() {
         <span>see more</span>
         </div>
 
-        <div className='div2'>
+        <div  className='div2 '>
          <h4 className='div21'> Buy Women's Clothing at Best Price</h4>
      
-    <Table  borderless >
+    {/* <Table  borderless className="dad bg-secondary">
       <thead >
         <tr>
           <th >Women's Clothing </th>
@@ -721,10 +602,41 @@ function Body() {
           <td>₹499</td>
         </tr>
       </tbody>
-    </Table>
+    </Table> */}
+    <div className="col-12 table d-flex bg-light ">
+<div className="col-10 col-12 col-lg-10 womens">
+<h4 >Women's Clothing </h4>
+<p >Pick Any 4- Womens Plain T-shirt Combo</p>
+<p >Pick Any 4- Plain Womens Boxer Combo</p>
+<p >Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</p>
+<p >Multicolor Checkered Long Casual Shirts for Women</p>
+<p >Pick Any 2: Plain Boxy Casual Shirts for Women Combo</p>
+<p >Blue Floral Anarkali Kurti</p>
+<p >Jade Black Narrow Cut Flexible Women Jeggings</p>
+<p >Mustard-yellow Solid Straight-Fit Women Pant</p>
+<p >Women Pants Combo - Pick Any 2</p>
+<p >Pista Green Solid Boxy Casual Shirts for Women</p>
+<p >Plain Burgundy Womens Boxer</p>
+<p >Striped Front Tie Casual Shirts for Women</p>
 
+</div>
+<div className="col-2 col-12 col-lg-2 bestprice">
+<h4 >Best Price</h4>
+<p>₹1099</p>
+<p>₹1099</p>
+<p>₹1399</p>
+<p>₹499</p>
+<p>₹799</p>
+<p>₹599</p>
+<p>₹998</p>
+<p>₹499</p>
+<p>₹800</p>
+<p>₹449</p>
+<p>₹349</p>
+<p>₹449</p>
 
-        
+</div>
+</div>
         </div>
           </div>
        
@@ -733,3 +645,5 @@ function Body() {
 }
 
 export default Body;
+
+
