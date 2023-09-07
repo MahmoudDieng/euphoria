@@ -1,0 +1,70 @@
+/* Styles pour le titre de la page "Similar Products" */
+.similar-title {
+  text-align: left; /* Alignement du texte à gauche */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Centrez les images horizontalement */
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* Marge autour des images */
+.card {
+  margin: 10px;
+}
+
+/* Appliquez une ombre aux images pour un effet de carte */
+.card img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de la div contenant l'image et le texte */
+.card-img-container {
+  position: relative;
+}
+
+/* Style du conteneur du texte */
+.card-text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  text-align: center;
+}
+
+/* Style du texte du produit */
+.card-text-container p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Styles pour le titre de la page */
+h1 {
+  text-align: left; /* Alignement du texte à gauche */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Styles pour le trait sous le titre */
+.clickable-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #8a33fd;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.clickable-title:hover::before {
+  transform: scaleX(1);
+}

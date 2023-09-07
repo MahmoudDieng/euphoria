@@ -1,0 +1,84 @@
+/* Styles pour la page */
+.container {
+  max-width: 1200px; /* Largeur maximale de la page */
+  margin: 0 auto; /* Centrer le contenu de la page */
+}
+
+/* Titre de la page */
+h1 {
+  text-align: left; /* Alignement du texte à gauche */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Styles pour le trait sous le titre */
+.clickable-title::before {
+  content: ''; 
+  position: absolute;
+  left: 0; /* Position à gauche */
+  bottom: -2px; /* Juste en dessous du texte */
+  width: 100%;
+  height: 2px;
+  background-color: #8a33fd; /* Couleur du trait */
+  transform: scaleX(0); /* Trait invisible au départ */
+  transform-origin: right; /* Début du trait à droite */
+  transition: transform 0.3s ease-in-out;
+}
+
+.clickable-title:hover::before {
+  transform: scaleX(0.5); /* Réduire le trait lors du survol à 50% de sa largeur maximale */
+}
+
+/* Styles pour les onglets de la navbar */
+.nav-tabs {
+  border-bottom: 2px solid #040404; /* Bordure en bas des onglets */
+}
+
+/* Styles pour les liens des onglets */
+.nav-link {
+  color: #060606; /* Couleur du texte des liens */
+  font-weight: bold; /* Texte en gras */
+}
+
+/* Styles pour le lien actif */
+.nav-link.active {
+  background-color: #007bff; /* Couleur de fond pour le lien actif */
+  color: #fff; /* Couleur du texte pour le lien actif */
+}
+
+/* Styles pour les sections */
+.section {
+  margin-top: 20px; /* Espacement en haut de chaque section */
+}
+
+/* Styles pour le tableau */
+.table {
+  width: 100%; /* Le tableau occupe 100% de la largeur disponible */
+  margin-top: 1rem; /* Marge en haut du tableau pour l'espacement */
+  border-collapse: collapse; /* Supprimer les espacements entre les cellules */
+}
+
+/* Styles pour les cellules du tableau */
+.table td {
+  border: 1px solid #ccc; /* Bordures pour chaque cellule */
+  padding: 0.5rem; /* Espacement interne des cellules */
+}
+
+/* Styles pour les en-têtes de tableau */
+.table th {
+  background-color: #f8f9fa; /* Couleur de fond pour les en-têtes */
+  font-weight: bold; /* Texte en gras pour les en-têtes */
+}
+
+/* Styles pour l'image */
+.image-wrapper {
+  text-align: center; /* Centrer l'image horizontalement */
+}
+
+.product-image {
+  max-width: 100%; /* Image avec une largeur maximale de 100% */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  border: 1px solid #ccc; /* Bordure autour de l'image */
+  border-radius: 5px; /* Coins arrondis pour l'image */
+  margin-top: 20px; /* Espacement en haut de l'image */
+}
