@@ -6,18 +6,20 @@
 .div1{
     border: 1px solid;
 }
-.icons{position: absolute;left: 41%; top: 25%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons2{position: absolute;left: 64%; top: 25%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons3{position: absolute;left: 86%; top: 25%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons4{position: absolute;left: 41%; top: 98%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons5{position: absolute;left: 64%; top: 98%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons6{position: absolute;left: 86%; top: 98%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons7{position: absolute;left: 41%; top: 172%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons8{position: absolute;left: 64%; top: 172%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons9{position: absolute;left: 86%; top: 172%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons10{position: absolute;left: 41%; top: 245%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons11{position: absolute;left: 64%; top: 245%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-.icons12{position: absolute;left: 86%; top: 245%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+/* .accordion span{font-size: 10px; text-align: left;}
+.accordion .ima{padding-left: 60%;} */
+.icons{position: absolute;left: 41%; top: 15%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons2{position: absolute;left: 64%; top: 15%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons3{position: absolute;left: 86%; top: 15%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons4{position: absolute;left: 41%; top: 88%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons5{position: absolute;left: 64%; top: 88%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons6{position: absolute;left: 86%; top: 88%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons7{position: absolute;left: 41%; top: 162%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons8{position: absolute;left: 64%; top: 162%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons9{position: absolute;left: 86%; top: 162%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons10{position: absolute;left: 41%; top: 235%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons11{position: absolute;left: 64%; top: 235%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+.icons12{position: absolute;left: 86%; top: 235%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
 
 .purple{ background: #8434E1; width: 25px; height: 25px; border-radius: 15%;}
 .black{background: #252525; width: 25px; height: 25px; border-radius: 15%;}
@@ -36,7 +38,7 @@
     padding-left: 20px; 
     padding-top: 10%;
 }
-.icon{padding-left: 60%;}
+
 
 .prix{
     position: absolute;
@@ -58,6 +60,8 @@ padding-top: 0px;
     text-align: left;
     padding-left: 2px;
 }
+.icon{padding-left: 60%;}
+
 .span{color: #807D7E;
     font-family: Core Sans C;
 font-size: 20px;
@@ -99,9 +103,9 @@ color: #807D7E;
         flex-direction: column;
         padding-left: 0px;
     }
-    .ima{
+    /* .ima{
         width: 100%;
-    }
+    } */
     .table{flex-direction: column; align-items: center; }
     .womens {border-right: 0px solid #807D7E;}
 
@@ -122,32 +126,32 @@ color: #807D7E;
 
 }
 @media(width:375px){
-    .icons{position: absolute;left: 69%; top: 100%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons2{position: absolute;left: 69%; top: 171%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons3{position: absolute;left: 69%; top: 243%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons4{position: absolute;left: 69%; top: 314%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons5{position: absolute;left: 69%; top: 386%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons6{position: absolute;left: 69%; top: 457%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons7{position: absolute;left: 69%; top: 530%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons8{position: absolute;left: 69%; top: 599%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons9{position: absolute;left: 69%; top: 671%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons10{position: absolute;left: 69%; top: 742%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons11{position: absolute;left: 69%; top:814%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons12{position: absolute;left: 69%; top: 886%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons{position: absolute;left: 69%; top: 91%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons2{position: absolute;left: 69%; top: 162%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons3{position: absolute;left: 69%; top: 234%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons4{position: absolute;left: 69%; top: 305%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons5{position: absolute;left: 69%; top: 377%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons6{position: absolute;left: 69%; top: 450%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons7{position: absolute;left: 69%; top: 520%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons8{position: absolute;left: 69%; top: 590%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons9{position: absolute;left: 69%; top: 662%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons10{position: absolute;left: 69%; top: 733%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons11{position: absolute;left: 69%; top:805%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons12{position: absolute;left: 69%; top: 877%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
 
 }
 @media(width:414px){
-    .icons{position: absolute;left: 69%; top: 77%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons2{position: absolute;left: 69%; top: 132%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons3{position: absolute;left: 69%; top: 185%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons4{position: absolute;left: 69%; top: 238%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons5{position: absolute;left: 69%; top: 291%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons6{position: absolute;left: 69%; top: 344%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons7{position: absolute;left: 69%; top: 397%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons8{position: absolute;left: 69%; top: 450%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons9{position: absolute;left: 69%; top: 503%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons10{position: absolute;left: 69%; top: 556%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons11{position: absolute;left: 69%; top:609%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
-    .icons12{position: absolute;left: 69%; top: 662%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons{position: absolute;left: 69%; top: 67%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons2{position: absolute;left: 69%; top: 122%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons3{position: absolute;left: 69%; top: 175%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons4{position: absolute;left: 69%; top: 228%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons5{position: absolute;left: 69%; top: 281%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons6{position: absolute;left: 69%; top: 334%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons7{position: absolute;left: 69%; top: 387%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons8{position: absolute;left: 69%; top: 440%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons9{position: absolute;left: 69%; top: 493%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons10{position: absolute;left: 69%; top: 546%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons11{position: absolute;left: 69%; top:599%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
+    .icons12{position: absolute;left: 69%; top: 652%;background: white; border-radius: 50%;width: 25px; height: 25px; padding: 10px;}
 
 }

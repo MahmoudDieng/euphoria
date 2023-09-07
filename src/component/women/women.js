@@ -7,13 +7,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
-
+import { Table } from "react-bootstrap";
 
 import Accordion from 'react-bootstrap/Accordion';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faFilter} from '@fortawesome/free-solid-svg-icons';
 import { faHeart} from '@fortawesome/free-regular-svg-icons';
@@ -34,7 +34,8 @@ import Rectangle25flower from '../../assets/Rectangle25flower.png';
 import Rectangle25idont from '../../assets/Rectangle25idont.png';
 import Rectangle25blueflower from '../../assets/Rectangle25blueflower.png';
 import Rectangle25linepatter from '../../assets/Rectangle25linepatter.png';
-
+import Iconchevron  from '../../assets/Iconchevron.png';
+import AccordionBody from "react-bootstrap/esm/AccordionBody";
 
 function Body() {
 
@@ -47,70 +48,50 @@ function Body() {
           <FontAwesomeIcon icon={faFilter } className='icon '/>
           
           <hr/>
-          <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-    {/* <div className='accordion'>
-         <span>Tops</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Printed T-shirts</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Plain T-shirts</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Kurti</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Boxers</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Full sleeve T-shirts</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Joggers</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    <div className='accordion'>
-         <span>Payjamas</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-    
-    <div className='accordion'>
-         <span>Jeans</span>
-         <FontAwesomeIcon icon={faChevronRight } className='icon'/>
-    </div>
-     */}
+
+           
+    <Table  borderless className="dad align-items-left">
+      
+      <tbody >
+        <tr>
+          <td >Tops</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Printed T-shirts</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Plain T-shirts</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Kurti</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Boxers</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Full sleeve T-shirts</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Joggers</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Payjamas</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Jeans</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+      </tbody>
+    </Table>
+
 
     <hr/>
 
@@ -119,12 +100,13 @@ function Body() {
       <Accordion.Item eventKey="0">
         <Accordion.Header
         >Price</Accordion.Header>
+        <Accordion.Body>
         <Form.Range />
         <div className='col-12 d-flex ' >
             <Button  variant="white">$77.00</Button>
       <Button className='b2' variant="white">$77.00</Button>
             </div>
-        <Accordion.Body>
+        
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
@@ -215,131 +197,39 @@ function Body() {
       <Accordion.Item eventKey="3">
         <Accordion.Header>Dress Style</Accordion.Header>
         <Accordion.Body>
-        <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Classic `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Casual `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Business `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Sport `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Elegant `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-      </div>
-      <div className="mb-2">
-        {[ 'end'].map(
-          (direction) => (
-            <DropdownButton
-              as={ButtonGroup}
-              key={direction}
-              id={`dropdown-button-drop-${direction}`}
-              drop={direction}
-              variant="white"
-              title={` Formal (evening) `}
-            >
-              <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-              <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-              <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-            </DropdownButton>
-          ),
-        )}
-
-
-
-      </div>
+        <Table  borderless className="dad align-items-left">
       
-        </Accordion.Body>
+      <tbody >
+        <tr>
+          <td >Classic</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Casual</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Business</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Sport</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Elegant</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        <tr>
+          <td>Formal (evening)</td>
+          <td><img src={Iconchevron } className="ima"  /></td>
+        </tr>
+        
+        
+      
+      </tbody>
+    </Table>
+    </Accordion.Body>
       </Accordion.Item>
     </Accordion>
 
@@ -603,7 +493,7 @@ function Body() {
         </tr>
       </tbody>
     </Table> */}
-    <div className="col-12 table d-flex bg-light ">
+ <div className="col-12 table d-flex bg-light ">
 <div className="col-10 col-12 col-lg-10 womens">
 <h4 >Women's Clothing </h4>
 <p >Pick Any 4- Womens Plain T-shirt Combo</p>
@@ -647,3 +537,4 @@ function Body() {
 export default Body;
 
 
+   
